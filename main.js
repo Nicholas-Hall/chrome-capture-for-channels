@@ -11,6 +11,8 @@ require('console-stamp')(console, {
   format: ':date(yyyy/mm/dd HH:MM:ss.l)',
 })
 
+const {channels} = require("./channels.js")
+
 const viewport = {
   width: 1920,
   height: 1080,
@@ -205,34 +207,7 @@ async function main() {
     var u = req.query.url
     let name = req.params.name
     if (name) {
-      u = {
-        nbc: 'https://www.nbc.com/live?brand=nbc&callsign=nbc',
-        cnbc: 'https://www.nbc.com/live?brand=cnbc&callsign=cnbc',
-        msnbc: 'https://www.nbc.com/live?brand=msnbc&callsign=msnbc',
-        nbcnews: 'https://www.nbc.com/live?brand=nbc-news&callsign=nbcnews',
-        bravo: 'https://www.nbc.com/live?brand=bravo&callsign=bravo_east',
-        bravop: 'https://www.nbc.com/live?brand=bravo&callsign=bravo_west',
-        e: 'https://www.nbc.com/live?brand=e&callsign=e_east',
-        ep: 'https://www.nbc.com/live?brand=e&callsign=e_west',
-        golf: 'https://www.nbc.com/live?brand=golf&callsign=golf',
-        oxygen: 'https://www.nbc.com/live?brand=oxygen&callsign=oxygen_east',
-        oxygenp: 'https://www.nbc.com/live?brand=oxygen&callsign=oxygen_west',
-        syfy: 'https://www.nbc.com/live?brand=syfy&callsign=syfy_east',
-        syfyp: 'https://www.nbc.com/live?brand=syfy&callsign=syfy_west',
-        usa: 'https://www.nbc.com/live?brand=usa&callsign=usa_east',
-        usap: 'https://www.nbc.com/live?brand=usa&callsign=usa_west',
-        universo: 'https://www.nbc.com/live?brand=nbc-universo&callsign=universo_east',
-        universop: 'https://www.nbc.com/live?brand=nbc-universo&callsign=universo_west',
-        necn: 'https://www.nbc.com/live?brand=necn&callsign=necn',
-        nbcsbayarea: 'https://www.nbc.com/live?brand=rsn-bay-area&callsign=nbcsbayarea',
-        nbcsboston: 'https://www.nbc.com/live?brand=rsn-boston&callsign=nbcsboston',
-        nbcscalifornia: 'https://www.nbc.com/live?brand=rsn-california&callsign=nbcscalifornia',
-        nbcschicago: 'https://www.nbc.com/live?brand=rsn-chicago&callsign=nbcschicago',
-        nbcsphiladelphia: 'https://www.nbc.com/live?brand=rsn-philadelphia&callsign=nbcsphiladelphia',
-        nbcswashington: 'https://www.nbc.com/live?brand=rsn-washington&callsign=nbcswashington',
-        weatherscan: 'https://weatherscan.net/',
-        windy: 'https://windy.com',
-      }[name]
+      u = channels[name]
     }
 
     var waitForVideo = req.query.waitForVideo === 'false' ? false : true
