@@ -7,6 +7,7 @@ const channels = {
     bravop: 'https://www.nbc.com/live?brand=bravo&callsign=bravo_west',
     e: 'https://www.nbc.com/live?brand=e&callsign=e_east',
     ep: 'https://www.nbc.com/live?brand=e&callsign=e_west',
+    espn: "https://tv.youtube.com/watch/_xde01Q5Cm8?utm_source=fire&onboard=1&vp=0gEEEgIwAQ%3D%3D",
     golf: 'https://www.nbc.com/live?brand=golf&callsign=golf',
     oxygen: 'https://www.nbc.com/live?brand=oxygen&callsign=oxygen_east',
     oxygenp: 'https://www.nbc.com/live?brand=oxygen&callsign=oxygen_west',
