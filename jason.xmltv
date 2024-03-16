@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <tv source-info-url="http://schedulesdirect.org" generator-info-name="guide2go" source-info-name="Schedules Direct">
+    <channel id="guide2go.90447.schedulesdirect.org">
+        <display-name>ARDGRHD</display-name>
+        <display-name>Das Erste HD</display-name>
+        <icon src="https://s3.amazonaws.com/schedulesdirect/assets/stationLogos/s90447_h3_aa.png" height="270" width="360"></icon>
+    </channel>
+    <programme channel="guide2go.90447.schedulesdirect.org" start="20190608004300 +0000" stop="20190608004500 +0000">
+        <title lang="de">Tagesschau</title>
+        <sub-title lang="de">vom 08.06.2019, 02:43 Uhr</sub-title>
+        <desc lang="de">Diese Sendung berichtet über die aktuellsten und wichtigsten Nachrichten der Bundesrepublik.&#xA;[vom 08.06.2019, 02:43 Uhr]</desc>
+        <category lang="en">News</category>
+        <category lang="en">Politics</category>
+        <category lang="en">Weather</category>
+        <episode-num system="original-air-date">2019-06-08</episode-num>
+        <icon src="https://s3.amazonaws.com/schedulesdirect/assets/p10414016_b_v8_aa.jpg" height="720" width="480"></icon>
+        <icon src="https://s3.amazonaws.com/schedulesdirect/assets/p10414016_b_h10_aa.jpg" height="540" width="960"></icon>
+        <video>
+            <quality>HDTV</quality>
+        </video>
+        <audio>
+            <stereo>dolby digital</stereo>
+        </audio>
+        <new></new>
+        <live></live>
+    </programme>
+  </tv>
